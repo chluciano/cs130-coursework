@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EDF7D2;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 20%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+img {
+	height: 100%;
+	width: auto;
+}
+
+iframe {
+	height: 100%;
+	width: 30%;
+}
+
+.content_container{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.photo_container{
+	height: 40vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+.pets{
+	width: 40%;
+}
+
+.pets th, .pets td{
+	border: 1px solid black;
+}
+
