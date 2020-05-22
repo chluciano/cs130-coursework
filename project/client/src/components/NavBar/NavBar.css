@@ -1,0 +1,8 @@
+.link, .link:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.groupContainer {
+	padding-bottom: 5%;
+}

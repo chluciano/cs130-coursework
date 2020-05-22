@@ -1,0 +1,40 @@
+.wrapper {
+  height: 85vh;
+  overflow-y: auto;
+}
+
+.dialog-wrapper{
+  overflow-y: auto;
+  height: 5000px;
+  -ms-overflow-style: none;
+}
+
+.wrapper::-webkit-scrollbar, .dialog-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+#toolbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+table tr:last-child td{
+  border-bottom: 0;
+}
+th, td {
+  border-bottom: 1px solid #d1d5d8;
+}
+
+th:last-child, td:last-child {
+  border-right: 0;
+}
+th {
+  background: #F5F8FA;
+  color: #000;
+  text-align: left;
+}
+
