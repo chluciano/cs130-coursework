@@ -26,3 +26,4 @@ process.on('SIGINT', () => {
 });
 
 require('./user');
+require('./course');

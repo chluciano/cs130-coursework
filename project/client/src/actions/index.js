@@ -7,7 +7,7 @@ export {
 	fetchUsersIfNeeded
 } from './users';
 
-
+export * from './courses';
 
 
 
