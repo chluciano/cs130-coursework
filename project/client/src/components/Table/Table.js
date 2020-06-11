@@ -98,15 +98,6 @@ const Table = ({columns, data, children, dialog=false, selector}) => {
     }
 	);
 
-	const selectedIds = selectedFlatRows.map(row => {
-		return(
-			row.original._id
-		)
-	})
-
-	console.log(selectedIds)
-
-
 	return (
 		<div>
 			<div id="toolbar">

@@ -89,7 +89,7 @@ router.get('/:classid/roster', (req, res, next) => {
   try {
     const classId = mongoose.Types.ObjectId(classid);
     Course.findById(classId, (err, course) => {
-      Course.populate(course, { path: 'students teachers', select: 'first_name last_name' }, (err, students) => {
+      Course.populate(course, { path: 'students teachers', select: 'first_name last_name instrument role' }, (err, students) => {
         if (err) {
           next(new ErrorHandler(400, 'Internal server error'));
         } else {

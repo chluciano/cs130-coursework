@@ -13,6 +13,7 @@ const { Schema, ObjectId } = mongoose;
 const UserSchema = new Schema({
   first_name: { type: String, default: '' },
   last_name: { type: String, default: '' },
+  instrument: { type: String, default: '' },
   role: { type: String, default: '' },
   classes: [{ type: ObjectId, ref: 'Course' }],
 });

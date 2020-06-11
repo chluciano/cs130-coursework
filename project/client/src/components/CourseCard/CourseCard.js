@@ -23,7 +23,7 @@ const CourseCard = ({toggleCollapse, isOpen, courseName, courseId}) => {
 				<Link to={"/courses/" + courseId + "/roster"} className="link">
 					<MenuItem icon="people" text="Attendance"></MenuItem>
 				</Link>
-				<MenuItem icon="manual" text="Hello world" href={"/courses/" + courseId + "/roster"}></MenuItem>
+				<MenuItem icon="manual" text="Homework" href={"/courses/" + courseId + "/roster"}></MenuItem>
 				
 				</Menu>
 			</Collapse>

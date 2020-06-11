@@ -10,7 +10,8 @@ class RosterContainer extends Component{
 		this.state = {
 			selectedStudents: [],
 			selectedStudentsToAdd: [],
-			dialogIsOpen: false
+			dialogIsOpen: false,
+			typeOpenDialog: ""
 		}
 	}
 
@@ -28,7 +29,6 @@ class RosterContainer extends Component{
 	} 
 
 	updateSelectedStudentsToAdd = (studentId) => {
-		console.log("called2")
 		this.setState(state => {
 			return {
 				selectedStudentsToAdd: [...state.selectedStudentsToAdd, studentId]
@@ -36,17 +36,18 @@ class RosterContainer extends Component{
 		});
 	} 
 
-	openDialog = (isOpen) => {
+	openDialog = (isOpen, dialogType) => {
 		this.setState(state => {
 			return {
-				dialogIsOpen: isOpen
+				dialogIsOpen: isOpen,
+				typeOpenDialog: dialogType
 			}
 		});
 	}
 
 
 	render(){
-		const {selectedStudents, selectedStudentsToAdd, dialogIsOpen} = this.state;
+		const {selectedStudents, selectedStudentsToAdd, dialogIsOpen, typeOpenDialog} = this.state;
 		const props = this.props;
 		console.log(selectedStudents)
 		console.log(selectedStudentsToAdd)
@@ -55,6 +56,7 @@ class RosterContainer extends Component{
 				{...props} 
 				openDialog={this.openDialog} 
 				dialogIsOpen={dialogIsOpen}
+				typeOpenDialog={typeOpenDialog}
 				updateSelectedStudents={this.updateSelectedStudents}
 				updateSelectedStudentsToAdd={this.updateSelectedStudentsToAdd}
 			/>
